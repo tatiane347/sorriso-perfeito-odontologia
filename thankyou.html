@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrigado! Sorriso Perfeito</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Estilos específicos para a página de obrigado */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Garante que o corpo ocupa toda a altura da viewport */
+        }
+        .thank-you-container {
+            flex-grow: 1; /* Faz o container crescer e empurrar o rodapé para baixo */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background-color: var(--light-bg-color); /* Use uma cor de fundo do seu CSS */
+            color: var(--primary-color); /* Use uma cor de texto do seu CSS */
+        }
+        .thank-you-container h1 {
+            font-size: 2.5em;
+            color: var(--accent-color); /* Use sua cor de destaque */
+            margin-bottom: 20px;
+        }
+        .thank-you-container p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+        .thank-you-container .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: var(--accent-color); /* Botão com cor de destaque */
+            color: var(--white-color); /* Texto branco no botão */
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .thank-you-container .btn:hover {
+            background-color: #008be6; /* Um tom um pouco mais escuro ao passar o mouse */
+        }
+        /* Seções de cabeçalho e rodapé para manter a consistência */
+        header, footer {
+            background-color: var(--primary-color); /* Use a cor principal do seu cabeçalho/rodapé */
+            color: var(--white-color);
+            padding: 20px 0;
+            width: 100%;
+            text-align: center;
+        }
+        header .container, footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header .logo img {
+            height: 40px; /* Ajuste conforme o tamanho do seu logo */
+        }
+        header .nav-list, header .menu-toggle {
+            display: none; /* Esconda o menu aqui, se não for necessário */
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="img/logo-sorriso-perfeito.png" alt="Logo Sorriso Perfeito">
+                <h1>Sorriso Perfeito</h1>
+            </a>
+            </div>
+    </header>
+
+    <main class="thank-you-container">
+        <h1>Obrigado por sua mensagem!</h1>
+        <p>Sua consulta ou dúvida foi enviada com sucesso. Nossa equipe entrará em contato em breve.</p>
+        <a href="index.html" class="btn">Voltar para a Página Inicial</a>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Sorriso Perfeito Odontologia. Todos os direitos reservados.</p>
+            <p>Desenvolvido por Tatiane Nascimento de Souza</p>
+        </div>
+    </footer>
+
+    </body>
+</html>
